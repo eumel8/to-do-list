@@ -1,54 +1,49 @@
 <html>
     <head>
-        <title>AngelPrime to-do List</title>
+        <title>#ebook Buecherleseliste</title>
 
-        <link rel="stylesheet" href="lib/Bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="lib/jQuery/jquery.ui.min.css" />
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/2.2.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/todo.css" />
     </head>
 
     <body class="well">
         <div id="container">
 
-            <div id="header"> To Do List </div>
+            <div id="header"> #ebook B&uuml;cherleseliste </div>
 
             <div class="task-list task-container" id="pending">
-                <h3>Pending</h3>
-                <!--<div class="todo-task">
-                    <div class="task-header">Sample Header</div>
-                    <div class="task-date">25/06/1992</div>
-                    <div class="task-description">Lorem Ipsum Dolor Sit Amet</div>
-                </div>-->
+                <h3>Zu Lesen</h3>
             </div>
 
             <div class="task-list task-container" id="inProgress">
-                <h3>In Progress</h3>
+                <h3>Lesen</h3>
             </div>
 
             <div class="task-list task-container" id="completed">
-                <h3>Completed</h3>
+                <h3>Gelesen</h3>
             </div>
 
             <div class="task-list">
-                <h3>Add a task</h3>
+                <h3>Buch hinzuf&uuml;gen</h3>
                 <form id="todo-form">
-                    <input type="text" placeholder="Title" />
-                    <textarea placeholder="Description"></textarea>
-                    <input type="text" id="datepicker" placeholder="Due Date (dd/mm/yyyy)" />
-                    <input type="button" class="btn btn-primary" value="Add Task" onclick="todo.add();" />
+                    <input type="text" name="keywords" placeholder="Autor" />
+                    <textarea placeholder="Titel"></textarea>
+                    <input type="text" id="datepicker" placeholder="Datum (dd/mm/yyyy)" />
+                    <input type="button" class="btn btn-primary" value="Hinzufuegen" onclick="todo.add();" />
                 </form>
 
-                <input type="button" class="btn btn-primary" value="Clear Data" onclick="todo.clear();" />
+                <input type="button" class="btn btn-primary" value="Loeschen" onclick="todo.clear();" />
 
                 <div id="delete-div">
-                    Drag Here to Delete
+                    Hierher ziehen zum L&ouml;schen
                 </div>
             </div>
 
             <div style="clear:both;"></div>
-	          <script type="text/javascript" src="lib/jQuery/jquery.min.js"></script>
-            <script type="text/javascript" src="lib/Bootstrap/bootstrap.min.js"></script>
-            <script type="text/javascript" src="lib/jQuery/jquery.ui.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/2.2.2/js/bootstrap.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
             <script type="text/javascript" src="assets/todo.js"></script>
 
             <script type="text/javascript">
@@ -59,7 +54,7 @@
                 $(".todo-task").draggable({ revert: "valid", revertDuration:200 });
                 todo.init();
             </script>
-
+	    Hinweis: Die Daten dieser Seite werden durch <a href="http://www.w3schools.com/html/html5_webstorage.asp">HTML5-Technologie</a> lokal auf <strong>diesem</strong> Rechner abgelegt. <a href="backup.html">Backup/Restore todoData</a>.
         </div>
     </body>
 </html>

@@ -4,7 +4,8 @@
 
 body {
     /* Override bootstrap properties */
-    background-color: #374a5d !important;
+    /* background-color: #374a5d !important; */
+    background-color: FFC12E !important;
     border: 0 !important;
 }
 
@@ -20,7 +21,7 @@ body {
     font-size: 30px;
     text-align: center;
     margin-bottom: 15px;
-    color: #fff;
+    color: #1b1b1b;
 }
 
 .task-list{
